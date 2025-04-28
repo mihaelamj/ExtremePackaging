@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "absolute:/Users/mmj/Downloads/ExtremePackaging-stage-01-init-packages/Packages">
+      location = "group:Packages">
    </FileRef>
    <FileRef
       location = "group:Apps/SwiftUIApp/SwiftUIApp.xcodeproj">
