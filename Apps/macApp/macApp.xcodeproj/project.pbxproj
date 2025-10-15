@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A957F4912E9FA4DD00C0C1AC /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = A957F4902E9FA4DD00C0C1AC /* AppFeature */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A9DBE5642E9E8AEB0029252A /* macApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,16 +27,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A957F4912E9FA4DD00C0C1AC /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A957F48F2E9FA4DD00C0C1AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9DBE55B2E9E8AEB0029252A = {
 			isa = PBXGroup;
 			children = (
 				A9DBE5662E9E8AEB0029252A /* macApp */,
+				A957F48F2E9FA4DD00C0C1AC /* Frameworks */,
 				A9DBE5652E9E8AEB0029252A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +78,7 @@
 			);
 			name = macApp;
 			packageProductDependencies = (
+				A957F4902E9FA4DD00C0C1AC /* AppFeature */,
 			);
 			productName = macApp;
 			productReference = A9DBE5642E9E8AEB0029252A /* macApp.app */;
@@ -331,6 +345,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A957F4902E9FA4DD00C0C1AC /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9DBE55C2E9E8AEB0029252A /* Project object */;
 }

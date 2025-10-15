@@ -1,17 +1,11 @@
-//
-//  iosAppApp.swift
-//  iosApp
-//
-//  Created by Mihaela Mihaljevic on 14.10.2025..
-//
-
 import SwiftUI
+import AppFeature
 
 @main
 struct iosAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

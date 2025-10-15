@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A957F48E2E9FA4D000C0C1AC /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = A957F48D2E9FA4D000C0C1AC /* AppFeature */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A9DBE57B2E9E8B060029252A /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,16 +27,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A957F48E2E9FA4D000C0C1AC /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A957F48C2E9FA4D000C0C1AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9DBE5722E9E8B050029252A = {
 			isa = PBXGroup;
 			children = (
 				A9DBE57D2E9E8B060029252A /* iosApp */,
+				A957F48C2E9FA4D000C0C1AC /* Frameworks */,
 				A9DBE57C2E9E8B060029252A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +78,7 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
+				A957F48D2E9FA4D000C0C1AC /* AppFeature */,
 			);
 			productName = iosApp;
 			productReference = A9DBE57B2E9E8B060029252A /* iosApp.app */;
@@ -332,6 +346,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A957F48D2E9FA4D000C0C1AC /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9DBE5732E9E8B050029252A /* Project object */;
 }
