@@ -4,4 +4,10 @@
    <FileRef
       location = "group:Packages">
    </FileRef>
+   <FileRef
+      location = "group:Apps/iosApp/iosApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Apps/macApp/macApp.xcodeproj">
+   </FileRef>
 </Workspace>
