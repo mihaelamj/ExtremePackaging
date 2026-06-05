@@ -1,22 +1,23 @@
 # ExtremePackaging
 
-A reference architecture for building modular Swift projects using **Swift Package Manager** as the foundation.
+Demo project for modular Swift app architecture using the Extreme Packaging
+approach.
 
-## Overview
+The repo shows how to start a multi-platform Swift app with app targets kept
+thin and most logic isolated into Swift packages. It is intentionally small:
+the value is the staged structure, not a finished product.
 
-**ExtremePackaging** is a project template and methodology focused on **maximal modularity** and **minimal coupling**.
-Each feature or domain is isolated into its own Swift package with a single, clear responsibility — making the codebase faster to build, easier to reason about, and naturally scalable across iOS, macOS, and server targets.
+## Core Idea
 
-## Core Principles
-
-- **Isolate everything.** Each package is self-contained with its own dependencies.
-- **Share only contracts.** Communication happens through public interfaces, never implementations.
-- **Scale gradually.** The architecture grows in defined stages, from a simple package setup to a complete multi-platform workspace.
-- **Automate hygiene.** SwiftLint and SwiftFormat keep every stage clean and consistent.
+- Put reusable code in Swift packages.
+- Keep iOS and macOS app targets as platform shells.
+- Share contracts instead of concrete implementations.
+- Add packages in stages so the architecture stays understandable.
+- Use SwiftLint and SwiftFormat from the beginning.
 
 ## Project Structure
 
-```
+```text
 ExtremePackaging/
 ├── Apps/
 │   ├── iOSApp/
@@ -27,44 +28,25 @@ ExtremePackaging/
 └── Main.xcworkspace
 ```
 
-- **Packages** contain all shared logic (features, models, utilities).
-- **Apps** act as thin platform shells.
-- **Workspace** ties everything together for development.
+## Stages
 
-## Getting Started
+Each branch captures a checkpoint in the setup:
 
-```bash
-git clone https://github.com/mihaelamj/ExtremePackaging.git
-cd ExtremePackaging
-xed .
-```
-
-Each stage of the repo represents a checkpoint in the project’s evolution:
-1. 🏁 **Stage 01** – Initialize packages
-2. ⚙️ **Stage 02** – Add workspace
-3. 💻 **Stage 03** – Add iOS & macOS apps
-
-Switch between stages using Git branches to explore how modularity grows step by step.
+1. `stage/01-init-packages`: initial package structure.
+2. `stage/02-workspace`: workspace integration.
+3. `stage/03-apps-added`: iOS and macOS app targets consuming packages.
 
 ```bash
 git checkout stage/03-apps-added
 ```
 
-## Tooling
+## Why It Exists
 
-Built-in support for:
-- 🧹 **SwiftLint** for static analysis
-- 🧾 **SwiftFormat** for consistent style
-- 🧱 **SwiftPM** for dependency isolation
+This is a reference repo for conversations about modular Swift apps. It is
+useful when you want to show the mechanical setup for package-first app
+architecture without mixing it into a larger real product.
 
-All configurations are included and ready to extend per package.
+## Status
 
-## Why It Matters
-
-ExtremePackaging promotes an architecture that remains transparent as it scales.
-By embracing modular design from day one, teams can iterate faster, test independently, and keep codebases healthy — even in long-lived projects.
-
----
-
-> *“Design for separation, not complexity.”*
-
+Public demo/reference repo. Not a framework and not an app template with a
+stable API.
